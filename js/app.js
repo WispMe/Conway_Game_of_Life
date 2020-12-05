@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', function(){
                 this.board.appendChild(divBox)
                 this.cells.push(divBox)
             }
-            // console.log(this.cells)
             this.cells.forEach(element => {
                 element.addEventListener('click', function(){
                     element.classList.toggle('live')
@@ -41,13 +40,6 @@ window.addEventListener('DOMContentLoaded', function(){
                 divElement.classList.remove('live')
             }
         }
-        // this.firstGlider = function(){
-        //     this.setCellState(2, 2, 'live')
-        //     this.setCellState(1, 2, 'live')
-        //     this.setCellState(2, 4, 'live')
-        //     this.setCellState(2, 5, 'live')
-        //     this.setCellState(0, 2, 'live')
-        // }
         this.computeCellNextState = function(x, y){
             var index = (x + (y * this.width))
             var indexDiv = document.getElementById(index)
@@ -111,9 +103,6 @@ window.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    var game = new gameOfLife(50, 50)
-    game.createBoard()
-    
     var playbtn = document.querySelector('#play')
     playbtn.addEventListener('click', function(){
         this.disabled = true
@@ -126,6 +115,10 @@ window.addEventListener('DOMContentLoaded', function(){
         playbtn.disabled = false
     })
 
+    var widthInput = prompt("Input the width length:", 50)
+    var heightInput = prompt("Input the height length:", 50)
+    var game = new gameOfLife(widthInput, heightInput)
+    game.createBoard()
 
 })
 
