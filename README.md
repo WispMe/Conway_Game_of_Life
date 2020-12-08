@@ -17,3 +17,5 @@ This game created with JavaScript that will display an interactive animation bas
 → You can read more about Game of Life <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">here<a/>.
 
 → Watch a short video about Game of Life <a href="https://www.youtube.com/watch?v=C2vgICfQawE" target="_blank">here<a/>.
+
+→ You can try the game <a href="https://faizfak.github.io/Conway_Game_of_Life/" target="_blank">here<a/>.

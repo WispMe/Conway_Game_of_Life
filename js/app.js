@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 this.cells.push(divBox)
             }
             this.cells.forEach(element => {
-                element.addEventListener('click', function(){
+                element.addEventListener('mouseenter', function(){
                     element.classList.toggle('live')
                 })
             });
